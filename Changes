@@ -1,5 +1,9 @@
 Revision history for String-Palindrome
 
+1.000       8/12/2010 2:01:30 AM (Central Daylight Time)
+    *   Switched to Dist::Zilla
+    *   Allow checking an array (or array ref) if it is a palindrome
+
 0.01    12/13/2009 08:53:52 PM (CST)
         First version, released on an unsuspecting world.
 
