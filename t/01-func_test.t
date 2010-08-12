@@ -13,14 +13,23 @@ my @undef = ([], {a => 1}, undef);
 
 
 #  Array checks
-my @ok_ref = (@ok,   reverse @ok);
-my @nok_ref = (@nok, reverse @nok);
+my @ok_ref  = ([@ok,  reverse @ok]);
+my @nok_ref = ([@nok, @nok]);
 
 push @ok_ref,  [split //, $_]  for  @ok;
 push @nok_ref, [split //, $_]  for  @nok;
 
-push @ok_ref,  [qw/ hi  bye  ted  bye hi]/, qw/ hello  world  world  hello /];
-push @nok_ref, [qw/ hi  bye  ted  bye ih]/, qw/ hello  world  hello /];
+push @ok_ref,  ([qw/ hi  bye  ted  bye hi/], [qw/ hello  world  world  hello /]);
+push @nok_ref, ([qw/ hi  bye  ted  bye ih/], [qw/ hello  world  helol /]);
+
+
+#  Array refs
+my $a = [1,2,3];
+my $b = [1,2,3];
+my $c = {a=>1,b=>2};
+
+push @ok_ref,  ([$a, $a], [$b,$b,$b], [$a, $b, $c, $c, $b, $a]);
+push @nok_ref, ([$a,$b],  [$b,$a],    [$a, $c]);
 
 
 #  POD examples
