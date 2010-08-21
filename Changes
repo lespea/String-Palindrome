@@ -1,12 +1,19 @@
 Revision history for String-Palindrome
 
+
+1.02        08/21/2010 06:13:02 PM (CDT)
+    *   Don't add Dist::Zilla info to META files
+
+
 1.01        08/21/2010 01:29:32 PM (CDT)
     *   Add example for "Kwalitee"
     *   Move back to correct # of minor version numbers (\d.\d\d)
 
+
 1.000       8/12/2010 2:01:30 AM (Central Daylight Time)
     *   Switched to Dist::Zilla
     *   Allow checking an array (or array ref) if it is a palindrome
+
 
 0.01    12/13/2009 08:53:52 PM (CST)
         First version, released on an unsuspecting world.
