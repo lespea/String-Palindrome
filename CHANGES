@@ -1,5 +1,9 @@
 Revision history for String-Palindrome
 
+1.01        08/21/2010 01:29:32 PM (CDT)
+    *   Add example for "Kwalitee"
+    *   Move back to correct # of minor version numbers (\d.\d\d)
+
 1.000       8/12/2010 2:01:30 AM (Central Daylight Time)
     *   Switched to Dist::Zilla
     *   Allow checking an array (or array ref) if it is a palindrome
