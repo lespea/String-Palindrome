@@ -1,7 +1,7 @@
-package String::Palindrome;
-
 use warnings;
 use strict;
+
+package String::Palindrome;
 
 require Exporter;
 
@@ -55,7 +55,7 @@ use vars qw(@ISA @EXPORT_OK);
 =func is_palindrome
 
 Returns true if the string, array_ref, or array is a palindrome.  If more than
-one paramater is passed to the function, then it will blindly assume that you
+one parameter is passed to the function, then it will blindly assume that you
 want to treat them as an array to be tested.  This means that you could,
 theoretically, pass in a palindrome of array_refs and it would still pass.
 
