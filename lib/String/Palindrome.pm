@@ -54,7 +54,7 @@ use vars qw(@ISA @EXPORT_OK);
 
 =func is_palindrome
 
-Returns true if the string, array_ref, or array is a palindrome.  If more than
+Returns true if the string, array, or array_ref is a palindrome.  If more than
 one parameter is passed to the function, then it will blindly assume that you
 want to treat them as an array to be tested.  This means that you could,
 theoretically, pass in a palindrome of array_refs and it would still pass.
@@ -88,13 +88,13 @@ sub is_palindrome {
         for  (my ($i, $j) = (0, $#{$arg});  $i < $j;  $i++, $j--) {
             my ($a, $b) = @{$arg}[$i, $j];
             if  (!defined $a) {
-                return 0  if  !defined $b;
+                return 0  if  defined $b;
             }
             elsif (!defined $b) {
                 return 0;
             }
             else {
-                return 0  unless  $arg->[$i] eq $arg->[$j];
+                return 0  unless  $a eq $b;
             }
         }
         return 1;

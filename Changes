@@ -1,5 +1,10 @@
 Revision history for String-Palindrome
 
+1.03        12/03/2010 03:51:27 AM (CST)
+    *   Correctly process an array containing undefs
+    *   Don't double deref an array ref
+    *   Updated dist.ini
+
 
 1.02        08/21/2010 06:13:02 PM (CDT)
     *   Don't add Dist::Zilla info to META files

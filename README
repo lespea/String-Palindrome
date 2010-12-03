@@ -2,7 +2,7 @@ NAME
     String::Palindrome - Determine if a string is a palindrome
 
 VERSION
-    version 1.000
+    version 1.03
 
 SYNOPSIS
         use String::Palindrome qw/ is_palindrome /;
@@ -40,7 +40,7 @@ EXPORTS
 
 FUNCTIONS
   is_palindrome
-    Returns true if the string, array_ref, or array is a palindrome. If more
+    Returns true if the string, array, or array_ref is a palindrome. If more
     than one parameter is passed to the function, then it will blindly
     assume that you want to treat them as an array to be tested. This means
     that you could, theoretically, pass in a palindrome of array_refs and it
@@ -95,12 +95,11 @@ SUPPORT
 
     *   Source Code Repository
 
-        The code is open to the world, and available for you to hack on.
-        Please feel free to browse it and play with it, or whatever. If you
-        want to contribute patches, please send me a diff or prod me to pull
-        from your repository :)
+        You can contribute or fork this project via github:
 
-        <git://github.com/lespea/String-Palindrome>
+        <http://github.com/lespea/string-palindrome>
+
+            git clone git://github.com/lespea/string-palindrome.git
 
   Bugs
     Please report any bugs or feature requests to "bug-string-palindrome at
