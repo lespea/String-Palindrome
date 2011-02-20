@@ -1,25 +1,28 @@
-Revision history for String-Palindrome
+Revision history for {{$dist->name}}
 
-1.03        12/03/2010 03:51:27 AM (CST)
+{{$NEXT}}
+    *   Switch over to new dzil config
+
+1.03        2010-12-03 03:51:27 America/Chicago
     *   Correctly process an array containing undefs
     *   Don't double deref an array ref
     *   Updated dist.ini
 
 
-1.02        08/21/2010 06:13:02 PM (CDT)
+1.02        2010-08-21 18:13:02 America/Chicago
     *   Don't add Dist::Zilla info to META files
 
 
-1.01        08/21/2010 01:29:32 PM (CDT)
+1.01        2010-08-21 13:29:32 America/Chicago
     *   Add example for "Kwalitee"
     *   Move back to correct # of minor version numbers (\d.\d\d)
 
 
-1.000       8/12/2010 2:01:30 AM (Central Daylight Time)
+1.000       2010-08-12 2:01:30 America/Chicago
     *   Switched to Dist::Zilla
     *   Allow checking an array (or array ref) if it is a palindrome
 
 
-0.01    12/13/2009 08:53:52 PM (CST)
+0.01    2009-12-13 20:53:52 America/Chicago
         First version, released on an unsuspecting world.
 

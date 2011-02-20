@@ -1,17 +1,19 @@
 use warnings;
 use strict;
+use utf8;
 
 package String::Palindrome;
 
 require Exporter;
 
-use vars qw(@ISA @EXPORT_OK);
-@ISA        = qw(Exporter);
+use vars qw(@EXPORT_OK);
+use base qw(Exporter);
 @EXPORT_OK  = qw(is_palindrome);  # symbols to export on request
 
 
-#ABSTRACT: Determine if a string is a palindrome
+# ABSTRACT: Determine if a string is a palindrome
 
+=encoding utf8
 
 =head1 SYNOPSIS
 
@@ -67,7 +69,7 @@ undef is returned.  Additionally, a blank array ref also returns undef.
 =cut
 
 
-sub is_palindrome {
+sub is_palindrome {  ## no critic 'Subroutines::RequireArgUnpacking'
     #  Get the args out
     my $arg  =  @_ > 1  ?  \@_
              :             $_[0]
@@ -85,7 +87,7 @@ sub is_palindrome {
         return  unless  ref $arg eq 'ARRAY';
         return  unless  @$arg;
 
-        for  (my ($i, $j) = (0, $#{$arg});  $i < $j;  $i++, $j--) {
+        for  (my ($i, $j) = (0, $#{$arg});  $i < $j;  $i++, $j--) {  ## no critic 'ControlStructures::ProhibitCStyleForLoops ValuesAndExpressions::ProhibitCommaSeparatedStatements'
             my ($a, $b) = @{$arg}[$i, $j];
             if  (!defined $a) {
                 return 0  if  defined $b;
