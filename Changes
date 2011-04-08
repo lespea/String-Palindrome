@@ -20,11 +20,11 @@ Revision history for {{$dist->name}}
     *   Move back to correct # of minor version numbers (\d.\d\d)
 
 
-1.000       2010-08-12 2:01:30 America/Chicago
+1.000       2010-08-12 02:01:30 America/Chicago
     *   Switched to Dist::Zilla
     *   Allow checking an array (or array ref) if it is a palindrome
 
 
-0.01    2009-12-13 20:53:52 America/Chicago
+0.01        2009-12-13 20:53:52 America/Chicago
         First version, released on an unsuspecting world.
 
