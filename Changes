@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+2.000001  2011-06-21 00:45:48 America/Chicago
     [Enhancement]
     *   Rebuild with newer dzil plugin to stop indexing README.html on CPAN
 
